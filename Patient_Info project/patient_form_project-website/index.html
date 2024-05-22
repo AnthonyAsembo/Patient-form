@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Patient Information Form</h1>
+    <form id="patient-form" action="submit.php" method="POST">
+        <h3>Patient Identifying Information</h3>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required><br>
+        
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br>
+        
+        <label for="middle_initial">Middle Initial:</label>
+        <input type="text" id="middle_name" name="middle_name"><br>
+        
+        <label for="sex">Sex:</label>
+        <input type="radio" id="male" name="sex" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="sex" value="Female">
+        <label for="female">Female</label><br>
+        
+        <label for="age_years">Age (Years):</label>
+        <input type="number" id="age_years" name="age_years" required><br>
+        
+        <label for="age_months">Age (Months):</label>
+        <input type="number" id="age_months" name="age_months" required><br>
+        
+        <label for="race">Race:</label>
+        <select id="race" name="race" required>
+            <option value="White">White</option>
+            <option value="Black">Black</option>
+            <option value="Asian/Pacific Islander">Asian/Pacific Islander</option>
+            <option value="Unknown">Unknown</option>
+            <option value="Other">Other</option>
+        </select><br>
+        
+        <label for="date_of_birth">Date of Birth:</label>
+        <input type="date" id="date_of_birth" name="date_of_birth" required><br>
+        
+        <label for="hispanic_or_latino">Hispanic or Latino:</label>
+        <input type="checkbox" id="hispanic_or_latino" name="hispanic_or_latino" value="Yes"><br>
+        
+        <label for="medical_record_number">Medical Record Number:</label>
+        <input type="text" id="medical_record_number" name="medical_record_number" required><br>
+        
+        <h3>Address</h3>
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street" required><br>
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br>
+        
+        <label for="county">County:</label>
+        <input type="text" id="county" name="county" required><br>
+        
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required><br>
+        
+        <h3>Facility</h3>
+        <label for="facility_name">Facility Name:</label>
+        <input type="text" id="facility_name" name="facility_name" required><br>
+        
+        <label for="facility_city">City:</label>
+        <input type="text" id="facility_city" name="facility_city" required><br>
+        
+        <label for="facility_county">County:</label>
+        <input type="text" id="facility_county" name="facility_county" required><br>
+        
+        <label for="facility_state">State:</label>
+        <input type="text" id="facility_state" name="facility_state" required><br>
+        
+        <label for="facility_phone">Phone Number:</label>
+        <input type="text" id="facility_phone" name="facility_phone" required><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
